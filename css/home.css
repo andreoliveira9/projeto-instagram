@@ -441,9 +441,9 @@ ion-icon {
         margin:0 18px;
     }
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:350px){
     .conteudo, .topo, .menu-inferior{
-        width:400px;
+        width:350px;
     }
     
 }
