@@ -244,9 +244,13 @@ ion-icon {
 }
 .novo-comentario form{
     display: flex;
+    align-items:center;
     height: 40px;
     border-top:1px solid #DBDBDB;
     padding:6px 16px;
+}
+.novo-comentario .icone-feliz{
+    padding-right:16px;
 }
 .novo-comentario input{
     width:100%;
