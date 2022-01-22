@@ -15,11 +15,20 @@
     <link rel="stylesheet" href="css/home.css">
     <script type="text/javascript">
         $(document).ready(function(){
+            $( window ).resize(function(){
+                if( $('.seta-direita').css('display') == "none" ){
+                    let storieMove = $('.stories').width() - $('.block-stories').width();
+
+                    $('.stories').css({right:storieMove+'px'});
+                }
+            });
             $('.seta-direita').click(function(){
-                //$('.stories').css('right','44px');
-                $('.stories').animate({right:"44px"}, 250);
+                let storieMove = $('.stories').width() - $('.block-stories').width();
+
+                $('.stories').animate({right: storieMove + "px"}, 250);
                 $('.seta-direita').css('display','none');
                 $('.seta-esquerda').css('display','block');
+                // alert('tamanho da div stories=' + ( ) );
             });
             $('.seta-esquerda').click(function(){
                 //$('.stories').css('right','0');
@@ -61,9 +70,10 @@
     </div>
     <div class="conteudo">
         <div class="conteudo-left">
-            <div class="block">
+            <div class="block-stories">
+                <ion-icon class="seta seta-esquerda" name="chevron-back-circle"></ion-icon>
                 <div class="stories">
-                    <ion-icon class="seta seta-esquerda" name="chevron-back-circle"></ion-icon>
+                    
                     <div class="storie"><div><img src="media/9gag.png"></div><p>9gag</p></div>
                     <div class="storie"><div><img src="media/meowed.png"></div><p>meowed</p></div>
                     <div class="storie"><div><img src="media/barked.png"></div><p>barked</p></div>
@@ -73,9 +83,10 @@
                     <div class="storie"><div><img src="media/filo.png"></div><p>filomoderna</p></div>
                     <div class="storie"><div><img src="media/mortadela.png"></div><p>memeriago.</p></div>
                    
-                    <ion-icon class="seta seta-direita" name="chevron-forward-circle"></ion-icon>
+                    
                     
                 </div>
+                <ion-icon class="seta seta-direita" name="chevron-forward-circle"></ion-icon>
             </div>
             <div class="posts">
                 <div class="post">
