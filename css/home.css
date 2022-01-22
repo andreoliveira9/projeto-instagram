@@ -338,6 +338,9 @@ ion-icon {
     justify-content: space-between;
     height: 32px;
 }
+.suggestions-link-nickname:hover{
+    text-decoration:underline;
+}
 .suggestions-nickname{
     color:#262626;
     font-weight: 500;
