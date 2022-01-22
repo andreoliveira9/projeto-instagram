@@ -7,9 +7,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js" ></script>
+
     <link rel="shortcut icon" href="media/favicon.ico">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/home.css">
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.seta-direita').click(function(){
+                //$('.stories').css('right','44px');
+                $('.stories').animate({right:"44px"}, 250);
+                $('.seta-direita').css('display','none');
+                $('.seta-esquerda').css('display','block');
+            });
+            $('.seta-esquerda').click(function(){
+                //$('.stories').css('right','0');
+                $('.stories').animate({right:"0"},250);
+                $('.seta-esquerda').css('display','none');
+                $('.seta-direita').css('display','block');
+            });
+        });
+        
+    </script>
     
     
     <title>Instagram</title>
@@ -43,7 +63,7 @@
         <div class="conteudo-left">
             <div class="block">
                 <div class="stories">
-                    
+                    <ion-icon class="seta seta-esquerda" name="chevron-back-circle"></ion-icon>
                     <div class="storie"><div><img src="media/9gag.png"></div><p>9gag</p></div>
                     <div class="storie"><div><img src="media/meowed.png"></div><p>meowed</p></div>
                     <div class="storie"><div><img src="media/barked.png"></div><p>barked</p></div>
@@ -52,7 +72,8 @@
                     <div class="storie"><div><img src="media/respondeai.png"></div><p>respondeai</p></div>
                     <div class="storie"><div><img src="media/filo.png"></div><p>filomoderna</p></div>
                     <div class="storie"><div><img src="media/mortadela.png"></div><p>memeriago.</p></div>
-                    <img class="seta" src="media/seta.png" alt="">
+                   
+                    <ion-icon class="seta seta-direita" name="chevron-forward-circle"></ion-icon>
                     
                 </div>
             </div>
