@@ -4,6 +4,9 @@ body{
     font-weight: 400;
     font-style: normal;
 }
+a, a:visited{
+    color:inherit;
+}
 strong{
     font-weight: 500;
 }
