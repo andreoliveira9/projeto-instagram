@@ -16,11 +16,17 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $( window ).resize(function(){
-                if( $('.seta-direita').css('display') == "none" ){
-                    let storieMove = $('.stories').width() - $('.block-stories').width();
-
-                    $('.stories').css({right:storieMove+'px'});
+                if( $(this).width() < 615 ){
+                    $('.seta-esquerda').css('display','none');
+                    $('.seta-direita').css('display','none');
+                }else{
+                    if( $('.stories').css('right') == '0px' ){
+                        $('.seta-direita').css('display','block');
+                    }else{
+                        $('.seta-esquerda').css('display', 'block');
+                    }
                 }
+                
             });
             $('.seta-direita').click(function(){
                 let storieMove = $('.stories').width() - $('.block-stories').width();
@@ -61,11 +67,11 @@
         </div>
         <div class="mobile-topo-menu">
             <div class="icones-esquerda">
-                <div class="icone-instagram"><ion-icon name="logo-instagram"></ion-icon></div>
+                <div class="icone-instagram"><a href="#"><ion-icon name="logo-instagram"></a></ion-icon></div>
                 
             </div>
-            <div class="logo"><img src="media/logo.png"/></div>
-            <div class="mensagem"><ion-icon name="paper-plane-outline"></ion-icon></div>
+            <div class="logo"><a href="#"><img src="media/logo.png"/></a></div>
+            <div class="mensagem"><a href="#"><ion-icon name="paper-plane-outline"></a></ion-icon></div>
         </div>
     </div>
     <div class="conteudo">
@@ -74,14 +80,14 @@
                 <ion-icon class="seta seta-esquerda" name="chevron-back-circle"></ion-icon>
                 <div class="stories">
                     
-                    <div class="storie"><div><img src="media/9gag.png"></div><p>9gag</p></div>
-                    <div class="storie"><div><img src="media/meowed.png"></div><p>meowed</p></div>
-                    <div class="storie"><div><img src="media/barked.png"></div><p>barked</p></div>
-                    <div class="storie"><div><img src="media/et.png"></div><p>nathanwpyle...</p></div>
-                    <div class="storie"><div><img src="media/wawa.png"></div><p>wawawiwac...</p></div>
-                    <div class="storie"><div><img src="media/respondeai.png"></div><p>respondeai</p></div>
-                    <div class="storie"><div><img src="media/filo.png"></div><p>filomoderna</p></div>
-                    <div class="storie"><div><img src="media/mortadela.png"></div><p>memeriago.</p></div>
+                    <div class="storie"><a href="#"><div><img src="media/9gag.png"></div><p>9gag</p></a></div>
+                    <div class="storie"><a href="#"><div><img src="media/meowed.png"></div><p>meowed</p></a></div>
+                    <div class="storie"><a href="#"><div><img src="media/barked.png"></div><p>barked</p></a></div>
+                    <div class="storie"><a href="#"><div><img src="media/et.png"></div><p>nathanwpyle...</p></a></div>
+                    <div class="storie"><a href="#"><div><img src="media/wawa.png"></div><p>wawawiwac...</p></a></div>
+                    <div class="storie"><a href="#"><div><img src="media/respondeai.png"></div><p>respondeai</p></a></div>
+                    <div class="storie"><a href="#"><div><img src="media/filo.png"></div><p>filomoderna</p></a></div>
+                    <div class="storie"><a href="#"><div><img src="media/mortadela.png"></div><p>memeriago.</p></a></div>
                    
                     
                     

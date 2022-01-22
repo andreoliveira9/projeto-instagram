@@ -6,6 +6,7 @@ body{
 }
 a, a:visited{
     color:inherit;
+    text-decoration: none;
 }
 strong{
     font-weight: 500;
@@ -396,9 +397,6 @@ ion-icon {
     }
     .mensagem{
         height: 18px;
-    }
-    .stories .seta{
-        display:none;
     }
     .posts{
         margin-top:0;
