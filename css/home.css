@@ -13,6 +13,7 @@ strong{
 }
 input{
     outline:none;
+    background:#FAFAFA;
 }
 .conteudo{
     width: 935px;
