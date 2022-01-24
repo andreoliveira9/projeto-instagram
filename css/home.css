@@ -128,11 +128,11 @@ ion-icon {
     justify-content: center;
     align-items: center;
     background-image: url('../media/stories_background.jpg');
-    width: 64px;
-    height: 64px;
+    width: 66px;
+    height: 66px;
     background-position: center;
-    background-size: 64px;
-    border-radius: 32px;
+    background-size: 66px;
+    border-radius: 33px;
     
 }
 .storie p{
