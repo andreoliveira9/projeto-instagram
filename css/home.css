@@ -407,6 +407,9 @@ ion-icon {
         display:flex;
         margin:0 18px;
     }
+    mobile-topo-menu .logo{
+        margin-left:0;
+    }
     .icone-instagram{
         border:0;
     }
