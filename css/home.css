@@ -241,7 +241,7 @@ ion-icon {
     font-size:14px;
 }
 .comentario-nick a:hover{
-    text-decoration: underline;
+    text-decoration: underline; 
 }
 .comentario-texto{
     margin-left:10px;
