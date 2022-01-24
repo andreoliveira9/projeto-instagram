@@ -226,7 +226,10 @@ ion-icon {
     border-radius:10px;
     margin-right: 5px;
 }
-
+.comentarios-ver-todos{
+    color: #8e8e8e;
+    font-size:14px;
+}
 .comentario{
     display: flex;
     justify-content: space-between;
@@ -236,6 +239,9 @@ ion-icon {
 .comentario-left{
     display:flex;
     font-size:14px;
+}
+.comentario-nick a:hover{
+    text-decoration: underline;
 }
 .comentario-texto{
     margin-left:10px;
