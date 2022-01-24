@@ -250,7 +250,7 @@ ion-icon {
     font-size:12px;
     cursor: pointer;
 }
-.comentario-like ion-icon:hover{
+.comentario-like ion-icon:hover{ 
     color:red;
 }
 .novo-comentario form{
