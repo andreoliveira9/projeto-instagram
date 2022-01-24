@@ -42,6 +42,17 @@
                 $('.seta-esquerda').css('display','none');
                 $('.seta-direita').css('display','block');
             });
+            $('.comentario-like ion-icon').click(function(){
+                $iconeHeart = $(this);
+                if($iconeHeart.attr('name') == 'heart-outline'){
+                    $iconeHeart.attr('name', 'heart'); 
+                    $iconeHeart.css('color', 'red')
+                }else{
+                    $iconeHeart.attr('name', 'heart-outline'); 
+                    $iconeHeart.css('color', 'black');
+                }
+            });
+            
         });
         
     </script>
